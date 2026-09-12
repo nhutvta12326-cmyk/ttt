@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic Tương Tác: Vấn Đề Cơ Bản Của Triết Học</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts with full Vietnamese support -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        parchment: '#f8f1e1',
+                        parchmentDark: '#ede0c4',
+                        sepiaDark: '#2b1e16',
+                        sepiaMedium: '#5c4333',
+                        sepiaLight: '#8c6d58',
+                        burgundy: '#6b1d2f',
+                        burgundyDark: '#4a121f',
+                        gold: '#c59b27',
+                        goldDark: '#997415',
+                        goldLight: '#e6c86e',
+                        ink: '#1c1512'
+                    },
+                    fontFamily: {
+                        title: ['"Playfair Display"', '"Cormorant Garamond"', 'Georgia', 'serif'],
+                        heading: ['"Playfair Display"', '"Cormorant Garamond"', 'Georgia', 'serif'],
+                        serifText: ['Spectral', 'Georgia', 'serif'],
+                        sans: ['"Be Vietnam Pro"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Vintage Styles */
+        body {
+            background-color: #2b1e16;
+            background-image: radial-gradient(#3d2c20 1px, transparent 1px), radial-gradient(#3d2c20 1px, #2b1e16 1px);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+            color: #1c1512;
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+
+        .paper-bg {
+            background-color: #f6efe0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.06'/%3E%3C/svg%3E");
+            box-shadow: inset 0 0 60px rgba(92, 67, 51, 0.25), 0 20px 40px rgba(0,0,0,0.5);
+        }
+
+        .vintage-border {
+            border: 2px solid #c59b27;
+            outline: 1px solid #6b1d2f;
+            outline-offset: 3px;
+        }
+
+        .vintage-card {
+            background: linear-gradient(135deg, #fbf6ec 0%, #ede1ca 100%);
+            border: 1px solid #d4c39e;
+            box-shadow: 0 4px 10px rgba(43, 30, 22, 0.1);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .vintage-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(107, 29, 47, 0.2);
+            border-color: #c59b27;
+        }
+
+        .seal-btn {
+            background: radial-gradient(circle, #8b263e 0%, #4a121f 100%);
+            border: 2px solid #e6c86e;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.2);
+        }
+
+        .seal-btn:hover {
+            background: radial-gradient(circle, #a32d49 0%, #5d1727 100%);
+            transform: scale(1.05);
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #ede0c4;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #8c6d58;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #6b1d2f;
+        }
+
+        .connector-line {
+            background: linear-gradient(to bottom, #c59b27, #8c6d58);
+        }
+
+        /* Pulsing Glow Effect */
+        @keyframes pulse-gold {
+            0%, 100% { box-shadow: 0 0 15px rgba(197, 155, 39, 0.4); }
+            50% { box-shadow: 0 0 25px rgba(197, 155, 39, 0.8); }
+        }
+        .glow-gold {
+            animation: pulse-gold 3s infinite;
+        }
+    </style>
+</head>
+<body class="min-h-screen py-8 px-2 sm:px-4 md:px-8 custom-scrollbar">
+
+    <!-- MAIN CONTAINER -->
+    <div class="max-w-6xl mx-auto paper-bg rounded-xl p-4 sm:p-8 md:p-12 relative overflow-hidden my-4 border-4 border-goldDark">
+        
+        <!-- Corner Ornaments -->
+        <div class="absolute top-2 left-2 text-gold opacity-80 text-2xl sm:text-4xl pointer-events-none">❮✦❯</div>
+        <div class="absolute top-2 right-2 text-gold opacity-80 text-2xl sm:text-4xl pointer-events-none">❮✦❯</div>
+        <div class="absolute bottom-2 left-2 text-gold opacity-80 text-2xl sm:text-4xl pointer-events-none">❮✦❯</div>
+        <div class="absolute bottom-2 right-2 text-gold opacity-80 text-2xl sm:text-4xl pointer-events-none">❮✦❯</div>
+
+        <!-- HEADER SECTION -->
+        <header class="text-center mb-10 pb-6 border-b-2 border-dashed border-sepiaLight relative">
+            
+            <h1 class="font-title text-2xl sm:text-4xl md:text-5xl text-burgundy font-black tracking-wider mb-3 uppercase leading-tight drop-shadow-sm">
+                Vấn Đề Cơ Bản Của Triết Học
+            </h1>
+            
+            <p class="font-heading italic text-lg sm:text-xl text-sepiaMedium max-w-3xl mx-auto mb-4">
+                "Vấn đề cơ bản lớn của mọi triết học, đặc biệt là triết học hiện đại, là vấn đề quan hệ giữa tư duy và tồn tại, giữa tinh thần và tự nhiên."
+            </p>
+            <p class="font-sans text-xs sm:text-sm text-burgundy font-semibold uppercase tracking-widest">
+                — Friedrich Engels (Ph.Ăng-ghen) —
+            </p>
+
+            <div class="mt-6 flex justify-center items-center space-x-2 text-gold">
+                <span class="h-0.5 w-12 sm:w-24 bg-gold"></span>
+                <i class="fa-solid fa-compass text-2xl"></i>
+                <span class="h-0.5 w-12 sm:w-24 bg-gold"></span>
+            </div>
+        </header>
+
+        <!-- NAVIGATION QUICK JUMP -->
+        <nav class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-10 text-xs sm:text-sm font-semibold">
+            <a href="#section-core" class="px-4 py-2 bg-parchmentDark hover:bg-goldLight text-sepiaDark rounded-full border border-sepiaLight transition shadow-sm flex items-center gap-2">
+                <i class="fa-solid fa-diagram-project text-burgundy"></i> Sơ Đồ Cốt Lõi
+            </a>
+            <a href="#section-mat1" class="px-4 py-2 bg-parchmentDark hover:bg-goldLight text-sepiaDark rounded-full border border-sepiaLight transition shadow-sm flex items-center gap-2">
+                <i class="fa-solid fa-cubes text-burgundy"></i> Mặt Thứ Nhất: Bản Thể Luận
+            </a>
+            <a href="#section-mat2" class="px-4 py-2 bg-parchmentDark hover:bg-goldLight text-sepiaDark rounded-full border border-sepiaLight transition shadow-sm flex items-center gap-2">
+                <i class="fa-solid fa-brain text-burgundy"></i> Mặt Thứ Hai: Nhận Thức Luận
+            </a>
+            <a href="#section-compare" class="px-4 py-2 bg-parchmentDark hover:bg-goldLight text-sepiaDark rounded-full border border-sepiaLight transition shadow-sm flex items-center gap-2">
+                <i class="fa-solid fa-scale-balanced text-burgundy"></i> Đối Chiếu
+            </a>
+            <a href="#section-meaning" class="px-4 py-2 bg-parchmentDark hover:bg-goldLight text-sepiaDark rounded-full border border-sepiaLight transition shadow-sm flex items-center gap-2">
+                <i class="fa-solid fa-compass text-burgundy"></i> Ý Nghĩa
+            </a>
+            <a href="#section-quiz" class="px-4 py-2 bg-burgundy hover:bg-burgundyDark text-goldLight rounded-full border border-gold transition shadow-sm flex items-center gap-2">
+                <i class="fa-solid fa-scroll text-gold"></i> Trắc Nghiệm Tương Tác
+            </a>
+        </nav>
+
+        <!-- CORE CONCEPT INTERACTIVE MAP SECTION -->
+        <section id="section-core" class="mb-14">
+            <div class="text-center mb-6">
+                <h2 class="font-heading text-2xl sm:text-3xl font-bold text-burgundy mb-2">
+                    <i class="fa-solid fa-sitemap mr-2"></i>Cấu Trúc Hai Mặt Của Vấn Đề Cơ Bản
+                </h2>
+            </div>
+
+            <!-- Main Interactive Tree Diagram -->
+            <div class="bg-parchmentDark/50 p-4 sm:p-8 rounded-xl border-2 border-sepiaLight/40 relative">
+                
+                <!-- Central Node -->
+                <div class="text-center mb-8">
+                    <div class="inline-block p-4 sm:p-6 bg-burgundy text-goldLight rounded-xl border-2 border-gold shadow-xl max-w-lg glow-gold">
+                        <div class="text-xs font-bold uppercase tracking-widest text-goldLight/80 mb-1">Mối Quan Hệ Cốt Lõi</div>
+                        <div class="font-heading text-xl sm:text-2xl font-bold mb-2">TƯ DUY & TỒN TẠI</div>
+                        <div class="text-xs sm:text-sm text-parchment font-serifText italic">
+                            (Ý Thức / Tinh Thần ⇆ Vật Chất / Tự Nhiên)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Branching Split -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 relative">
+                    
+                    <!-- MAT 1: BAN THE LUAN -->
+                    <div class="vintage-card p-5 rounded-lg border-2 border-burgundy/30 flex flex-col justify-start">
+                        <div class="mb-4">
+                            <div class="flex items-center justify-between mb-3 border-b border-sepiaLight/30 pb-2">
+                                <span class="bg-burgundy text-goldLight text-xs px-2.5 py-1 rounded font-bold uppercase">Mặt 1</span>
+                                <span class="font-heading font-bold text-lg text-burgundy">BẢN THỂ LUẬN</span>
+                            </div>
+                            <h3 class="font-semibold text-base text-sepiaDark mb-2">
+                                <i class="fa-solid fa-question-circle text-goldDark mr-1"></i>
+                                Câu hỏi: "Cái nào có trước? Cái nào quyết định cái nào?"
+                            </h3>
+                            <p class="text-xs text-sepiaMedium min-h-[36px] leading-relaxed">
+                                Trả lời cho mối quan hệ khởi nguyên giữa vật chất và ý thức, chia triết học thành các trường phái lớn.
+                            </p>
+                        </div>
+
+                        <!-- Sub-branches -->
+                        <div class="space-y-2.5">
+                            <button onclick="openModal('duy-vat')" class="w-full text-left p-3 rounded bg-white/80 hover:bg-goldLight/30 border border-sepiaLight flex items-center justify-between transition group">
+                                <div>
+                                    <span class="font-bold text-sm text-burgundy block group-hover:translate-x-1 transition-transform">1. Chủ Nghĩa Duy Vật</span>
+                                    <span class="text-xs text-sepiaMedium">Vật chất có trước, quyết định ý thức</span>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-goldDark group-hover:translate-x-1 transition-transform"></i>
+                            </button>
+
+                            <button onclick="openModal('duy-tam')" class="w-full text-left p-3 rounded bg-white/80 hover:bg-goldLight/30 border border-sepiaLight flex items-center justify-between transition group">
+                                <div>
+                                    <span class="font-bold text-sm text-burgundy block group-hover:translate-x-1 transition-transform">2. Chủ Nghĩa Duy Tâm</span>
+                                    <span class="text-xs text-sepiaMedium">Ý thức/Tinh thần có trước, quyết định vật chất</span>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-goldDark group-hover:translate-x-1 transition-transform"></i>
+                            </button>
+
+                            <button onclick="openModal('nhi-nguyen')" class="w-full text-left p-3 rounded bg-white/80 hover:bg-goldLight/30 border border-sepiaLight flex items-center justify-between transition group">
+                                <div>
+                                    <span class="font-bold text-sm text-sepiaMedium block group-hover:translate-x-1 transition-transform">3. Nhị Nguyên Luận</span>
+                                    <span class="text-xs text-sepiaMedium">Coi vật chất & ý thức tồn tại song song</span>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-goldDark group-hover:translate-x-1 transition-transform"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- MAT 2: NHAN THUC LUAN -->
+                    <div class="vintage-card p-5 rounded-lg border-2 border-burgundy/30 flex flex-col justify-start">
+                        <div class="mb-4">
+                            <div class="flex items-center justify-between mb-3 border-b border-sepiaLight/30 pb-2">
+                                <span class="bg-burgundy text-goldLight text-xs px-2.5 py-1 rounded font-bold uppercase">Mặt 2</span>
+                                <span class="font-heading font-bold text-lg text-burgundy">NHẬN THỨC LUẬN</span>
+                            </div>
+                            <h3 class="font-semibold text-base text-sepiaDark mb-2">
+                                <i class="fa-solid fa-question-circle text-goldDark mr-1"></i>
+                                Câu hỏi: "Con người có thể nhận thức được thế giới hay không?"
+                            </h3>
+                            <p class="text-xs text-sepiaMedium min-h-[36px] leading-relaxed">
+                                Trả lời cho khả năng hiểu biết thế giới và khám phá bản chất chân lý của trí tuệ con người.
+                            </p>
+                        </div>
+
+                        <!-- Sub-branches -->
+                        <div class="space-y-2.5">
+                            <button onclick="openModal('kha-luan')" class="w-full text-left p-3 rounded bg-white/80 hover:bg-goldLight/30 border border-sepiaLight flex items-center justify-between transition group">
+                                <div>
+                                    <span class="font-bold text-sm text-burgundy block group-hover:translate-x-1 transition-transform">1. Khả Tri Luận</span>
+                                    <span class="text-xs text-sepiaMedium">Khẳng định con người CÓ THỂ nhận thức thế giới</span>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-goldDark group-hover:translate-x-1 transition-transform"></i>
+                            </button>
+
+                            <button onclick="openModal('bat-kha-luan')" class="w-full text-left p-3 rounded bg-white/80 hover:bg-goldLight/30 border border-sepiaLight flex items-center justify-between transition group">
+                                <div>
+                                    <span class="font-bold text-sm text-burgundy block group-hover:translate-x-1 transition-transform">2. Bất Khả Tri Luận</span>
+                                    <span class="text-xs text-sepiaMedium">Phủ nhận khả năng nhận thức bản chất thực tại</span>
+                                </div>
+                                <i class="fa-solid fa-chevron-right text-goldDark group-hover:translate-x-1 transition-transform"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- DETAILED SECTION 1: MAT THU NHAT -->
+        <section id="section-mat1" class="mb-14 scroll-mt-6">
+            <div class="flex items-center gap-3 mb-6 border-b-2 border-sepiaLight/40 pb-3">
+                <div class="w-10 h-10 rounded-full bg-burgundy text-goldLight flex items-center justify-center font-bold text-xl shadow">1</div>
+                <div>
+                    <h2 class="font-heading text-2xl sm:text-3xl font-bold text-burgundy">Mặt Thứ Nhất: Bản Thể Luận (Ontology)</h2>
+                    <p class="text-xs sm:text-sm text-sepiaMedium">Nguồn gốc khởi nguyên của Vũ Trụ & Sự Vật</p>
+                </div>
+            </div>
+
+            <!-- Materialism Deep Dive -->
+            <div class="mb-8">
+                <div class="bg-gradient-to-r from-amber-900/10 to-transparent p-4 rounded-t-lg border-l-4 border-burgundy mb-4">
+                    <h3 class="font-heading text-xl font-bold text-burgundy flex items-center gap-2">
+                        <i class="fa-solid fa-mountain text-goldDark"></i> CHỦ NGHĨA DUY VẬT (Materialism)
+                    </h3>
+                    <p class="text-sm text-sepiaDark mt-1">
+                        Khẳng định bản chất thế giới là <strong>Vật chất</strong>. Vật chất có trước, ý thức có sau; ý thức chỉ là sự phản ánh thế giới vật chất vào não người.
+                    </p>
+                </div>
+
+                <!-- 3 Forms of Materialism -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <!-- Form 1 -->
+                    <div class="vintage-card p-4 rounded-lg flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold text-goldDark uppercase tracking-wider block mb-1">Thời Cổ Đại</span>
+                            <h4 class="font-heading font-bold text-base text-burgundy mb-2">CNDV Chất Phác Cổ Đại</h4>
+                            <p class="text-xs text-sepiaMedium leading-relaxed mb-3">
+                                Quy thế giới về một hoặc một số yếu tố vật chất cụ thể, cảm tính (Nước, Lửa, Khí, Nguyên tử).
+                            </p>
+                            <div class="bg-parchmentDark/60 p-2.5 rounded text-xs text-sepiaDark font-serifText italic mb-3">
+                                VD: Thales (Nước), Heraclitus (Lửa), Democritus (Nguyên tử).
+                            </div>
+                        </div>
+                        <button onclick="openModal('duy-vat-chat-phac')" class="text-xs text-burgundy font-semibold hover:underline flex items-center gap-1">
+                            Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Form 2 -->
+                    <div class="vintage-card p-4 rounded-lg flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold text-goldDark uppercase tracking-wider block mb-1">Thế kỷ XV - XVIII</span>
+                            <h4 class="font-heading font-bold text-base text-burgundy mb-2">CNDV Siêu Hình</h4>
+                            <p class="text-xs text-sepiaMedium leading-relaxed mb-3">
+                                Coi thế giới như một cỗ máy cơ học khổng lồ. Nhìn nhận sự vật trong trạng thái cô lập, tĩnh tại, không vận động phát triển.
+                            </p>
+                            <div class="bg-parchmentDark/60 p-2.5 rounded text-xs text-sepiaDark font-serifText italic mb-3">
+                                Đại diện: Newton, Bacon, Locke, Holbach.
+                            </div>
+                        </div>
+                        <button onclick="openModal('duy-vat-sieu-hinh')" class="text-xs text-burgundy font-semibold hover:underline flex items-center gap-1">
+                            Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Form 3 -->
+                    <div class="vintage-card p-4 rounded-lg flex flex-col justify-between border-2 border-gold/60">
+                        <div>
+                            <span class="text-xs font-bold text-burgundy uppercase tracking-wider block mb-1">Hình thức đỉnh cao</span>
+                            <h4 class="font-heading font-bold text-base text-burgundy mb-2">CNDV Biện Chứng</h4>
+                            <p class="text-xs text-sepiaMedium leading-relaxed mb-3">
+                                Do C.Mác & Ph.Ăng-ghen sáng lập. Thống nhất giữa chủ nghĩa duy vật và phương pháp biện chứng, phản ánh đúng đắn quy luật vận động khách quan.
+                            </p>
+                            <div class="bg-parchmentDark/60 p-2.5 rounded text-xs text-sepiaDark font-serifText italic mb-3">
+                                Đại diện: K.Marx, F.Engels, V.I.Lenin.
+                            </div>
+                        </div>
+                        <button onclick="openModal('duy-vat-bien-chung')" class="text-xs text-burgundy font-semibold hover:underline flex items-center gap-1">
+                            Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Idealism Deep Dive -->
+            <div>
+                <div class="bg-gradient-to-r from-purple-900/10 to-transparent p-4 rounded-t-lg border-l-4 border-purple-900 mb-4">
+                    <h3 class="font-heading text-xl font-bold text-burgundy flex items-center gap-2">
+                        <i class="fa-solid fa-cloud-moon text-goldDark"></i> CHỦ NGHĨA DUY TÂM (Idealism)
+                    </h3>
+                    <p class="text-sm text-sepiaDark mt-1">
+                        Khẳng định tinh thần, ý thức có trước và sinh ra thế giới vật chất. Là cơ sở lý luận cho nhiều quan niệm tôn giáo.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Idealism 1 -->
+                    <div class="vintage-card p-4 rounded-lg">
+                        <span class="text-xs font-bold text-goldDark uppercase tracking-wider block mb-1">Trường phái 1</span>
+                        <h4 class="font-heading font-bold text-base text-burgundy mb-2">CNDT Chủ Quan</h4>
+                        <p class="text-xs text-sepiaMedium leading-relaxed mb-3">
+                            Thừa nhận tính thứ nhất của ý thức <strong>con người</strong>. Coi sự vật chỉ là "tập hợp các cảm giác" của chủ thể.
+                        </p>
+                        <div class="bg-parchmentDark/60 p-2.5 rounded text-xs text-sepiaDark font-serifText italic mb-2">
+                            "Tồn tại nghĩa là được tri giác." — George Berkeley
+                        </div>
+                        <div class="text-xs text-sepiaMedium">Đại diện: Berkeley, Hume, Fichte.</div>
+                    </div>
+
+                    <!-- Idealism 2 -->
+                    <div class="vintage-card p-4 rounded-lg">
+                        <span class="text-xs font-bold text-goldDark uppercase tracking-wider block mb-1">Trường phái 2</span>
+                        <h4 class="font-heading font-bold text-base text-burgundy mb-2">CNDT Khách Quan</h4>
+                        <p class="text-xs text-sepiaMedium leading-relaxed mb-3">
+                            Coi tinh thần khách quan (Ý niệm tuyệt đối, Tinh thần thế giới, Thượng đế) có trước và sáng tạo ra vạn vật.
+                        </p>
+                        <div class="bg-parchmentDark/60 p-2.5 rounded text-xs text-sepiaDark font-serifText italic mb-2">
+                            "Thế giới vật chất chỉ là cái bóng của Thế giới Ý niệm." — Plato
+                        </div>
+                        <div class="text-xs text-sepiaMedium">Đại diện: Plato, G.Hegel.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DETAILED SECTION 2: MAT THU HAI -->
+        <section id="section-mat2" class="mb-14 scroll-mt-6">
+            <div class="flex items-center gap-3 mb-6 border-b-2 border-sepiaLight/40 pb-3">
+                <div class="w-10 h-10 rounded-full bg-burgundy text-goldLight flex items-center justify-center font-bold text-xl shadow">2</div>
+                <div>
+                    <h2 class="font-heading text-2xl sm:text-3xl font-bold text-burgundy">Mặt Thứ Hai: Nhận Thức Luận</h2>
+                    <p class="text-xs sm:text-sm text-sepiaMedium">Khả năng khám phá Chân lý của Con người</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Kha Luan -->
+                <div class="vintage-card p-5 rounded-lg border-t-4 border-emerald-700">
+                    <div class="text-emerald-800 text-2xl mb-2"><i class="fa-solid fa-eye"></i></div>
+                    <h3 class="font-heading text-lg font-bold text-burgundy mb-2">Khả Tri Luận</h3>
+                    <p class="text-xs text-sepiaMedium leading-relaxed mb-4">
+                        Khả Tri Luận khẳng định: Con người có thể nhận thức được bản chất của thế giới. Những gì tư duy phản ánh về sự vật về bản chất là phù hợp với bản thân sự vật đó.
+                    </p>
+                    <div class="text-xs bg-parchmentDark/50 p-2 rounded text-sepiaDark">
+                        <strong>Luận điểm:</strong> Không có cái gì là không thể biết, chỉ có cái con người chưa biết mà thôi.
+                    </div>
+                </div>
+
+                <!-- Bat Kha Luan -->
+                <div class="vintage-card p-5 rounded-lg border-t-4 border-rose-800">
+                    <div class="text-rose-800 text-2xl mb-2"><i class="fa-solid fa-eye-slash"></i></div>
+                    <h3 class="font-heading text-lg font-bold text-burgundy mb-2">Bất Khả Tri Luận</h3>
+                    <p class="text-xs text-sepiaMedium leading-relaxed mb-4">
+                        Phủ nhận khả năng nhận thức thế giới của con người. Con người chỉ có thể nắm bắt được hiện tượng bên ngoài chứ không bao giờ thấu hiểu được "Vật tự nó" (Thing-in-itself).
+                    </p>
+                    <div class="text-xs bg-parchmentDark/50 p-2 rounded text-sepiaDark">
+                        <strong>Đại diện tiêu biểu:</strong> Immanuel Kant, David Hume.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPARISON MATRIX SECTION -->
+        <section id="section-compare" class="mb-14 scroll-mt-6">
+            <div class="text-center mb-6">
+                <h2 class="font-heading text-2xl sm:text-3xl font-bold text-burgundy mb-2">
+                    <i class="fa-solid fa-scale-balanced mr-2"></i>Bảng So Sánh Đối Chiếu Tương Tác
+                </h2>
+                <p class="text-xs sm:text-sm text-sepiaMedium">
+                    So sánh trực quan các tiêu chí cốt lõi giữa hai trường phái đối lập chính.
+                </p>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse rounded-lg overflow-hidden shadow-lg border border-sepiaLight">
+                    <thead>
+                        <tr class="bg-burgundy text-goldLight font-heading text-sm sm:text-base">
+                            <th class="p-3 sm:p-4 border-b border-goldDark/40 w-1/4">Tiêu Chí So Sánh</th>
+                            <th class="p-3 sm:p-4 border-b border-goldDark/40 w-3/8 bg-burgundyDark">Chủ Nghĩa Duy Vật</th>
+                            <th class="p-3 sm:p-4 border-b border-goldDark/40 w-3/8">Chủ Nghĩa Duy Tâm</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-xs sm:text-sm divide-y divide-sepiaLight/30 bg-parchment">
+                        <tr class="hover:bg-parchmentDark/40 transition">
+                            <td class="p-3 sm:p-4 font-bold text-burgundy bg-parchmentDark/30">1. Khởi Nguyên (Mặt 1)</td>
+                            <td class="p-3 sm:p-4 font-semibold text-emerald-900">Vật chất có trước, quyết định ý thức</td>
+                            <td class="p-3 sm:p-4 font-semibold text-purple-900">Ý thức/Tinh thần có trước, quyết định vật chất</td>
+                        </tr>
+                        <tr class="hover:bg-parchmentDark/40 transition">
+                            <td class="p-3 sm:p-4 font-bold text-burgundy bg-parchmentDark/30">2. Bản Chất Ý Thức</td>
+                            <td class="p-3 sm:p-4">Là sự phản ánh thế giới khách quan vào não người</td>
+                            <td class="p-3 sm:p-4">Là cái có sẵn, nguyên thủy, thực tại duy nhất</td>
+                        </tr>
+                        <tr class="hover:bg-parchmentDark/40 transition">
+                            <td class="p-3 sm:p-4 font-bold text-burgundy bg-parchmentDark/30">3. Liên Hệ Tôn Giáo</td>
+                            <td class="p-3 sm:p-4">Cơ sở lý luận cho thế giới quan khoa học, vô thần</td>
+                            <td class="p-3 sm:p-4">Thường liên kết chặt chẽ với thế giới quan tôn giáo</td>
+                        </tr>
+                        <tr class="hover:bg-parchmentDark/40 transition">
+                            <td class="p-3 sm:p-4 font-bold text-burgundy bg-parchmentDark/30">4. Vai Trò Lịch Sử</td>
+                            <td class="p-3 sm:p-4">Thúc đẩy khoa học tự nhiên & thực tiễn phát triển</td>
+                            <td class="p-3 sm:p-4">Đóng góp cho sự phát triển của tư duy lý luận & phép biện chứng (Hegel)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- PHILOSOPHER GALLERY SECTION -->
+        <section class="mb-14">
+            <div class="text-center mb-8">
+                <h2 class="font-heading text-2xl sm:text-3xl font-bold text-burgundy mb-2">
+                    <i class="fa-solid fa-users-rectangle mr-2"></i>Hành Lang Triết Gia Đại Diện
+                </h2>
+                <p class="text-xs sm:text-sm text-sepiaMedium">
+                    Những bộ óc vĩ đại đã định hình nên lịch sử tư duy nhân loại
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 sm:gap-4">
+                <!-- Democritus -->
+                <div onclick="openPhilosopherModal('democritus')" class="vintage-card p-3 rounded-lg text-center cursor-pointer hover:border-gold">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-sepiaMedium/20 border border-gold flex items-center justify-center text-burgundy font-heading text-2xl font-bold mb-2">
+                        Đ
+                    </div>
+                    <h4 class="font-bold text-xs text-burgundy">Democritus</h4>
+                    <span class="text-[10px] text-sepiaMedium block">Cổ Hy Lạp</span>
+                    <span class="mt-1 inline-block text-[9px] bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded">Duy Vật</span>
+                </div>
+
+                <!-- Plato -->
+                <div onclick="openPhilosopherModal('plato')" class="vintage-card p-3 rounded-lg text-center cursor-pointer hover:border-gold">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-sepiaMedium/20 border border-gold flex items-center justify-center text-burgundy font-heading text-2xl font-bold mb-2">
+                        P
+                    </div>
+                    <h4 class="font-bold text-xs text-burgundy">Plato</h4>
+                    <span class="text-[10px] text-sepiaMedium block">Cổ Hy Lạp</span>
+                    <span class="mt-1 inline-block text-[9px] bg-purple-100 text-purple-800 px-1.5 py-0.5 rounded">Duy Tâm KH</span>
+                </div>
+
+                <!-- Berkeley -->
+                <div onclick="openPhilosopherModal('berkeley')" class="vintage-card p-3 rounded-lg text-center cursor-pointer hover:border-gold">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-sepiaMedium/20 border border-gold flex items-center justify-center text-burgundy font-heading text-2xl font-bold mb-2">
+                        B
+                    </div>
+                    <h4 class="font-bold text-xs text-burgundy">G. Berkeley</h4>
+                    <span class="text-[10px] text-sepiaMedium block">Anh Quốc</span>
+                    <span class="mt-1 inline-block text-[9px] bg-purple-100 text-purple-800 px-1.5 py-0.5 rounded">Duy Tâm CB</span>
+                </div>
+
+                <!-- Kant -->
+                <div onclick="openPhilosopherModal('kant')" class="vintage-card p-3 rounded-lg text-center cursor-pointer hover:border-gold">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-sepiaMedium/20 border border-gold flex items-center justify-center text-burgundy font-heading text-2xl font-bold mb-2">
+                        K
+                    </div>
+                    <h4 class="font-bold text-xs text-burgundy">I. Kant</h4>
+                    <span class="text-[10px] text-sepiaMedium block">Đức</span>
+                    <span class="mt-1 inline-block text-[9px] bg-rose-100 text-rose-800 px-1.5 py-0.5 rounded">Bất Khả Luận</span>
+                </div>
+
+                <!-- Hegel -->
+                <div onclick="openPhilosopherModal('hegel')" class="vintage-card p-3 rounded-lg text-center cursor-pointer hover:border-gold">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-sepiaMedium/20 border border-gold flex items-center justify-center text-burgundy font-heading text-2xl font-bold mb-2">
+                        H
+                    </div>
+                    <h4 class="font-bold text-xs text-burgundy">G.W.F. Hegel</h4>
+                    <span class="text-[10px] text-sepiaMedium block">Đức</span>
+                    <span class="mt-1 inline-block text-[9px] bg-purple-100 text-purple-800 px-1.5 py-0.5 rounded">Duy Tâm KH</span>
+                </div>
+
+                <!-- Karl Marx -->
+                <div onclick="openPhilosopherModal('marx')" class="vintage-card p-3 rounded-lg text-center cursor-pointer hover:border-gold">
+                    <div class="w-16 h-16 mx-auto rounded-full bg-burgundy/20 border border-gold flex items-center justify-center text-burgundy font-heading text-2xl font-bold mb-2">
+                        M
+                    </div>
+                    <h4 class="font-bold text-xs text-burgundy">Karl Marx</h4>
+                    <span class="text-[10px] text-sepiaMedium block">Đức</span>
+                    <span class="mt-1 inline-block text-[9px] bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded">DV Biện Chứng</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- METHODOLOGICAL SIGNIFICANCE SECTION -->
+        <section id="section-meaning" class="mb-14 scroll-mt-6">
+            <div class="vintage-card p-6 sm:p-8 rounded-xl border-2 border-gold/70 bg-gradient-to-br from-[#fbf6ec] to-[#f4e7d0] shadow-md relative overflow-hidden">
+                <div class="flex items-center gap-3 mb-6 border-b border-sepiaLight/40 pb-4">
+                    <div class="w-10 h-10 rounded-full bg-burgundy text-goldLight flex items-center justify-center font-bold text-lg shadow">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <div>
+                        <h2 class="font-heading text-2xl sm:text-3xl font-bold text-burgundy">Ý Nghĩa Phương Pháp Luận</h2>
+                        <p class="text-xs sm:text-sm text-sepiaMedium">Giá trị thực tiễn và bài học nhận thức từ Vấn đề cơ bản của Triết học</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+                    <!-- Card 1 -->
+                    <div class="bg-white/80 p-5 rounded-lg border border-sepiaLight/60 flex flex-col justify-between hover:border-gold transition shadow-sm">
+                        <div>
+                            <div class="w-8 h-8 rounded-full bg-burgundy/10 text-burgundy flex items-center justify-center font-bold text-sm mb-3">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <h3 class="font-heading font-bold text-base text-burgundy mb-2">Lập Trường Thế Giới Quan</h3>
+                            <p class="text-xs text-sepiaDark leading-relaxed">
+                                Giúp xác định lập trường thế giới quan đúng đắn là chủ nghĩa duy vật biện chứng, chống lại chủ nghĩa duy tâm và siêu hình.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white/80 p-5 rounded-lg border border-sepiaLight/60 flex flex-col justify-between hover:border-gold transition shadow-sm">
+                        <div>
+                            <div class="w-8 h-8 rounded-full bg-burgundy/10 text-burgundy flex items-center justify-center font-bold text-sm mb-3">
+                                <i class="fa-solid fa-lightbulb"></i>
+                            </div>
+                            <h3 class="font-heading font-bold text-base text-burgundy mb-2">Củng Cố Niềm Tin Khoa Học</h3>
+                            <p class="text-xs text-sepiaDark leading-relaxed">
+                                Cung cấp niềm tin khoa học thông qua khả tri luận gắn liền với thực tiễn để không ngừng lao động, sáng tạo và nghiên cứu.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white/80 p-5 rounded-lg border border-sepiaLight/60 flex flex-col justify-between hover:border-gold transition shadow-sm">
+                        <div>
+                            <div class="w-8 h-8 rounded-full bg-burgundy/10 text-burgundy flex items-center justify-center font-bold text-sm mb-3">
+                                <i class="fa-solid fa-rotate"></i>
+                            </div>
+                            <h3 class="font-heading font-bold text-base text-burgundy mb-2">Rèn Luyện Tư Duy Biện Chứng</h3>
+                            <p class="text-xs text-sepiaDark leading-relaxed">
+                                Phải kiên quyết khắc phục tư duy siêu hình phiến diện, cứng nhắc và rèn luyện tư duy biện chứng để luôn thấy được sự vận động, phát triển và nhạy cảm với cái mới.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REDESIGNED: INTERACTIVE PHILOSOPHICAL QUIZ SECTION -->
+        <section id="section-quiz" class="mb-14 scroll-mt-6">
+            <div class="bg-gradient-to-br from-[#5d1727] via-[#4a121f] to-[#340a14] border-2 border-gold p-6 sm:p-8 rounded-xl shadow-2xl relative overflow-hidden">
+                <div class="text-center mb-6">
+                    <span class="bg-gold/20 text-goldLight border border-gold/40 text-xs px-3.5 py-1 rounded-full font-bold uppercase tracking-widest inline-block mb-2 shadow-sm">
+                        <i class="fa-solid fa-puzzle-piece mr-1.5 text-gold"></i>Khám Phá Bản Thân
+                    </span>
+                    <h2 class="font-heading text-2xl sm:text-3xl font-bold text-goldLight drop-shadow-md">
+                        <i class="fa-solid fa-compass-drafting mr-2 text-gold"></i>Trắc Nghiệm: Bạn Thuộc Trường Phái Triết Học Nào?
+                    </h2>
+                    <p class="text-xs sm:text-sm text-parchment/90 mt-1 max-w-xl mx-auto">
+                        Trả lời 3 câu hỏi tình huống ngắn để xem thế giới quan của bạn gần với trường phái nào nhất.
+                    </p>
+                </div>
+
+                <!-- Quiz Box Container -->
+                <div id="quiz-container" class="max-w-2xl mx-auto bg-[#f9f3e5] p-5 sm:p-6 rounded-lg border-2 border-gold/50 shadow-xl">
+                    <div id="quiz-question-box">
+                        <div class="flex justify-between items-center text-xs font-bold uppercase mb-3.5 pb-2 border-b border-sepiaLight/30">
+                            <span id="quiz-step-label" class="text-burgundy font-bold tracking-wider">Câu hỏi 1 / 3</span>
+                            <span class="h-2 w-28 bg-parchmentDark rounded-full overflow-hidden border border-sepiaLight/40">
+                                <span id="quiz-progress-bar" class="h-full bg-burgundy block w-1/3 transition-all duration-300"></span>
+                            </span>
+                        </div>
+                        
+                        <h3 id="quiz-question-text" class="font-heading text-base sm:text-lg font-bold text-burgundyDark mb-4 leading-snug">
+                            1. Theo bạn, cội nguồn ban đầu tạo nên Vũ trụ và Vạn vật là gì?
+                        </h3>
+
+                        <div id="quiz-options-list" class="space-y-3">
+                            <!-- Options rendered dynamically -->
+                        </div>
+                    </div>
+
+                    <!-- Quiz Result Display (Hidden initially) -->
+                    <div id="quiz-result-box" class="hidden text-center py-4">
+                        <div class="w-16 h-16 mx-auto bg-burgundy text-goldLight rounded-full flex items-center justify-center text-2xl mb-3 shadow-md border-2 border-gold">
+                            <i id="result-icon" class="fa-solid fa-award"></i>
+                        </div>
+                        <h3 class="text-xs font-bold uppercase text-goldDark tracking-widest mb-1">Thế Giới Quan Triết Học Của Bạn</h3>
+                        <h4 id="result-title" class="font-heading text-2xl font-bold text-burgundy mb-3">Chủ Nghĩa Duy Vật Biện Chứng</h4>
+                        <p id="result-desc" class="text-xs sm:text-sm text-sepiaDark leading-relaxed bg-parchmentDark/70 p-4 rounded-lg border border-sepiaLight/50 mb-5">
+                            Bạn tin rằng thế giới vật chất tồn tại độc lập và quyết định ý thức. Đồng thời, bạn nhìn nhận mọi thứ trong sự vận động, biến đổi và liên hệ không ngừng!
+                        </p>
+                        <button onclick="resetQuiz()" class="seal-btn text-goldLight text-xs font-semibold px-6 py-2.5 rounded-full uppercase transition shadow-md hover:scale-105">
+                            <i class="fa-solid fa-rotate-left mr-1"></i> Làm Lại Trắc Nghiệm
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="text-center pt-6 border-t border-sepiaLight/30 text-xs text-sepiaMedium">
+        </footer>
+
+    </div>
+
+    <!-- ANCIENT SCROLL MODAL (FOR DETAILED CONTENT) -->
+    <div id="modal-overlay" class="fixed inset-0 bg-black/75 backdrop-blur-sm z-50 hidden flex items-center justify-center p-3 sm:p-6 transition-opacity">
+        <div class="paper-bg border-4 border-goldDark max-w-2xl w-full max-h-[85vh] rounded-xl shadow-2xl flex flex-col overflow-hidden relative animate-in fade-in zoom-in duration-200">
+            
+            <!-- Modal Header -->
+            <div class="bg-burgundy text-goldLight p-4 sm:p-5 border-b-2 border-gold flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-scroll text-xl"></i>
+                    <h3 id="modal-title" class="font-heading text-xl font-bold">Tiêu Đề Trích Xuất</h3>
+                </div>
+                <button onclick="closeModal()" class="text-goldLight/80 hover:text-white text-2xl leading-none px-2">&times;</button>
+            </div>
+
+            <!-- Modal Body -->
+            <div id="modal-body" class="p-6 overflow-y-auto custom-scrollbar text-sm text-sepiaDark space-y-4 leading-relaxed">
+                <!-- Content injected via JavaScript -->
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="bg-parchmentDark p-3 border-t border-sepiaLight/40 text-right">
+                <button onclick="closeModal()" class="seal-btn text-goldLight text-xs font-semibold px-5 py-2 rounded-full uppercase">
+                    Đóng Cuộn Sách
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT INTERACTION LOGIC -->
+    <script>
+        // --- DATA STORE FOR MODALS ---
+        const modalData = {
+            'duy-vat': {
+                title: "Chủ Nghĩa Duy Vật (Materialism)",
+                content: `
+                    <p class="font-semibold text-burgundy text-base">Khái Luận Cốt Lõi:</p>
+                    <p>Chủ nghĩa duy vật là trường phái triết học xuất phát từ việc thừa nhận rằng: <strong>Vật chất có trước, ý thức có sau</strong>. Vật chất tồn tại khách quan, độc lập với ý thức con người và quyết định ý thức.</p>
+                    
+                    <div class="bg-parchmentDark/70 p-3 rounded border-l-4 border-gold my-3">
+                        <strong class="text-burgundy">3 Hình thức phát triển lịch sử:</strong>
+                        <ul class="list-disc pl-5 mt-1 space-y-1 text-xs">
+                            <li><strong>CNDV Cổ Đại:</strong> Mang tính chất phác, trực quan, ngây thơ (Thales, Heraclitus, Democritus).</li>
+                            <li><strong>CNDV Siêu Hình (Thế kỷ XVII-XVIII):</strong> Coi thế giới là cỗ máy cơ học (Bacon, Locke, Holbach).</li>
+                            <li><strong>CNDV Biện Chứng:</strong> Hình thức hoàn thiện nhất do Mác & Ăng-ghen sáng lập.</li>
+                        </ul>
+                    </div>
+
+                    <p><strong>Ý nghĩa phương pháp luận:</strong> Trong nhận thức và hành động thực tiễn, con người phải luôn xuất phát từ thực tế khách quan, tôn trọng quy luật khách quan, không được lấy ý muốn chủ quan thay thế cho thực tế.</p>
+                `
+            },
+            'duy-tam': {
+                title: "Chủ Nghĩa Duy Tâm (Idealism)",
+                content: `
+                    <p class="font-semibold text-burgundy text-base">Khái Luận Cốt Lõi:</p>
+                    <p>Chủ nghĩa duy tâm khẳng định rằng <strong>tinh thần, ý thức là cái có trước</strong> và quyết định thế giới vật chất. Vật chất chỉ là sản phẩm hoặc sự phản ánh của tinh thần.</p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 my-3">
+                        <div class="bg-parchmentDark/60 p-3 rounded border border-sepiaLight">
+                            <strong class="text-burgundy text-xs block mb-1">Duy Tâm Chủ Quan</strong>
+                            <p class="text-xs">Phóng đại vai trò cảm giác, ý thức của cá nhân chủ thể. Coi sự vật là tập hợp cảm giác (Berkeley).</p>
+                        </div>
+                        <div class="bg-parchmentDark/60 p-3 rounded border border-sepiaLight">
+                            <strong class="text-burgundy text-xs block mb-1">Duy Tâm Khách Quan</strong>
+                            <p class="text-xs">Coi lực lượng tinh thần phi cá nhân ("Ý niệm tuyệt đối", "Thượng đế") sáng tạo ra vạn vật (Plato, Hegel).</p>
+                        </div>
+                    </div>
+
+                    <p><strong>Nguồn gốc xã hội:</strong> Do sự phân công lao động giữa lao động trí óc và lao động chân tay trong lịch sử, khi tầng lớp thống trị coi trọng tư duy hơn hoạt động thực tiễn.</p>
+                `
+            },
+            'nhi-nguyen': {
+                title: "Nhị Nguyên Luận (Dualism)",
+                content: `
+                    <p class="font-semibold text-burgundy text-base">Bản Chất Tư Tưởng:</p>
+                    <p>Nhị nguyên luận là quan điểm triết học không thừa nhận sự thống nhất của thế giới. Trường phái này coi <strong>vật chất và tinh thần là hai nguyên thể độc lập</strong>, song song tồn tại, không cái nào sinh ra hay quyết định cái nào.</p>
+
+                    <div class="bg-parchmentDark/70 p-3 rounded my-3 border-l-4 border-burgundy">
+                        <strong class="text-burgundy">Đại diện tiêu biểu:</strong> René Descartes (Đề-các-tơ). Ông cho rằng con người gồm hai thực thể: Thực thể thể xác (có kích thước, chiều rộng) và Thực thể tư duy (tâm hồn).
+                    </div>
+
+                    <p><strong>Đánh giá:</strong> Cuối cùng, Nhị nguyên luận thường rơi vào Chủ nghĩa Duy tâm khi phải giải thích mối liên hệ giữa hai thực thể này (thường viện đến sự can thiệp của Thượng đế).</p>
+                `
+            },
+            'kha-luan': {
+                title: "Khả Tri Luận ",
+                content: `
+                    <p><strong>Khả Tri Luận</strong> khẳng định rằng  con người hoàn toàn có khả năng nhận thức được thế giới khách quan thông qua thực tiễn, tiêu biểu là các nhà triết học duy vật và nhiều nhà duy tâm.
+</p>
+                    <div class="bg-parchmentDark/70 p-3 rounded my-3 border-l-4 border-burgundy">
+                        <strong class="text-burgundy">Ví dụ:</strong> khoa học hiện đại bóc trần cấu trúc ADN hay chinh phục không gian.
+                    </div>
+                `
+            },
+            'bat-kha-luan': {
+                title: "Bất Khả Tri Luận ",
+                content: `
+                    <p><strong>Bất Khả Tri Luận</strong> phủ nhận hoặc hoài nghi khả năng nhận thức của con người về bản chất cốt lõi bên trong của sự vật, tiêu biểu là Đa-vít Hium và I-man-uy-en Kát với khái niệm vật tự nó.
+</p>
+                    
+                    <div class="bg-parchmentDark/70 p-3 rounded my-3 border-l-4 border-burgundy">
+                        <strong class="text-burgundy">Ví dụ:</strong> Kant cho rằng ta chỉ thấy hiện tượng bên ngoài của đóa hoa còn bản chất sâu kín thì tâm trí không thể thấu hiểu hoàn toàn.
+                    </div>
+                    <p><strong>Hoài Nghi Luận</strong> nghi ngờ tính xác thực của mọi tri thức và khả năng nhận thức chân lý. Tuy nhiên, Hoài Nghi Luận là con đường, còn Bất Khả Tri Luận chính là đích đến của con đường đó.
+
+</p>
+                `
+            },
+            'duy-vat-chat-phac': {
+                title: "CNDV Chất Phác Cổ Đại",
+                content: `
+                    <p>Chủ nghĩa duy vật thời cổ đại thừa nhận tính thứ nhất của thế giới vật chất, nhưng đồng nhất vật chất với một hoặc một vài chất cụ thể:</p>
+                    <ul class="list-disc pl-5 my-2 space-y-1">
+                        <li><strong>Thales:</strong> Nước là bản nguyên của vạn vật.</li>
+                        <li><strong>Anaximenes:</strong> Khí là cơ sở của vạn vật.</li>
+                        <li><strong>Heraclitus:</strong> Lửa là nguồn gốc vũ trụ.</li>
+                        <li><strong>Democritus:</strong> Nguyên tử (Atom) là hạt nhỏ nhất không thể phân chia.</li>
+                    </ul>
+                    <p><em>Hạn chế:</em> Mang tính trực quan, cảm tính, chưa có cơ sở khoa học thực nghiệm chứng minh.</p>
+                `
+            },
+            'duy-vat-sieu-hinh': {
+                title: "CNDV Siêu Hình (Thế Kỷ XVII - XVIII)",
+                content: `
+                    <p>Phát triển mạnh mẽ cùng với sự ra đời của Cơ học cổ điển (Newton). Nhìn nhận thế giới như một cỗ máy khổng lồ.</p>
+                    <p class="mt-2"><strong>Đặc điểm chính:</strong> Xem xét các sự vật trong trạng thái cô lập, tách rời, tĩnh tại, không có sự phát triển chuyển hóa lẫn nhau.</p>
+                `
+            },
+            'duy-vat-bien-chung': {
+                title: "CNDV Biện Chứng (Mác - Lênin)",
+                content: `
+                    <p>Là hình thức phát triển cao nhất của Chủ nghĩa Duy vật do K.Marx và F.Engels sáng lập vào những năm 1840, sau đó được V.I.Lenin phát triển.</p>
+                    <p class="mt-2"><strong>Đóng góp vĩ đại:</strong> Khắc phục tính siêu hình của CNDV cũ và tính duy tâm của phép biện chứng cũ, tạo nên sự thống nhất hữu cơ giữa Chủ nghĩa Duy vật và Phép Biện chứng.</p>
+                `
+            }
+        };
+
+        const philosopherData = {
+            'democritus': {
+                title: "Democritus (460 - 370 TCN)",
+                content: `<p>Nhà triết học Cổ Hy Lạp, người phát triển <strong>Thuyết Nguyên tử</strong>. Ông cho rằng vạn vật được cấu tạo từ các nguyên tử nhỏ bé không thể phân chia vận động trong khoảng không vũ trụ.</p>`
+            },
+            'plato': {
+                title: "Plato (427 - 347 TCN)",
+                content: `<p>Đại biểu xuất sắc của <strong>Chủ nghĩa Duy tâm Khách quan</strong> thời Cổ Hy Lạp. Ông đưa ra Thuyết Ý niệm: Thế giới vật chất chúng ta đang sống chỉ là cái bóng phản chiếu của "Thế giới Ý niệm" vĩnh hằng.</p>`
+            },
+            'berkeley': {
+                title: "George Berkeley (1685 - 1753)",
+                content: `<p>Triết gia người Anh, đại biểu điển hình của <strong>Chủ nghĩa Duy tâm Chủ quan</strong>. Mệnh đề nổi tiếng: <em>"Tồn tại nghĩa là được tri giác" (To be is to be perceived)</em>.</p>`
+            },
+            'kant': {
+                title: "Immanuel Kant (1724 - 1804)",
+                content: `<p>Nhà triết học cổ điển Đức. Ông đại diện cho <strong>Thuyết Bất khả luận</strong> với quan niệm về "Vật tự nó" (Ding an sich) nằm ngoài khả năng nhận thức của con người.</p>`
+            },
+            'hegel': {
+                title: "G.W.F. Hegel (1770 - 1831)",
+                content: `<p>Đỉnh cao Triết học cổ điển Đức. Ông xây dựng hệ thống <strong>Chủ nghĩa Duy tâm Khách quan</strong> dựa trên "Ý niệm tuyệt đối", đồng thời đóng góp hệ thống <strong>Phép Biện chứng</strong> vĩ đại.</p>`
+            },
+            'marx': {
+                title: "Karl Marx (1818 - 1883)",
+                content: `<p>Nhà tư tưởng thiên tài sáng lập ra <strong>Chủ nghĩa Duy vật Biện chứng</strong> và <strong>Chủ nghĩa Duy vật Lịch sử</strong>, cải tạo thế giới bằng thực tiễn cách mạng.</p>`
+            }
+        };
+
+        // --- MODAL HANDLERS ---
+        function openModal(key) {
+            const data = modalData[key];
+            if (!data) return;
+            document.getElementById('modal-title').innerText = data.title;
+            document.getElementById('modal-body').innerHTML = data.content;
+            document.getElementById('modal-overlay').classList.remove('hidden');
+        }
+
+        function openPhilosopherModal(key) {
+            const data = philosopherData[key];
+            if (!data) return;
+            document.getElementById('modal-title').innerText = data.title;
+            document.getElementById('modal-body').innerHTML = data.content;
+            document.getElementById('modal-overlay').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('modal-overlay').classList.add('hidden');
+        }
+
+        // --- QUIZ INTERACTION LOGIC ---
+        const quizQuestions = [
+            {
+                question: "1. Theo bạn, cội nguồn ban đầu tạo nên Vũ trụ và Vạn vật là gì?",
+                options: [
+                    { text: "Vật chất khách quan (nguyên tử, các chất tự nhiên, năng lượng).", type: "duyvat" },
+                    { text: "Ý thức, tinh thần tối cao hoặc một đấng sáng tạo linh thiêng.", type: "duytam" },
+                    { text: "Không thể biết chắc chắn vì trí tuệ con người có giới hạn.", type: "batkhaluan" }
+                ]
+            },
+            {
+                question: "2. Ý thức và suy nghĩ của con người đến từ đâu?",
+                options: [
+                    { text: "Là sản phẩm do bộ não người phản ánh thế giới thực tế xung quanh.", type: "duyvat" },
+                    { text: "Là thực thể linh hồn độc lập, có sẵn bên trong hoặc do thần linh ban cho.", type: "duytam" },
+                    { text: "Chỉ là những cảm giác mơ hồ, không thể khẳng định bản chất thật sự.", type: "batkhaluan" }
+                ]
+            },
+            {
+                question: "3. Con người có thể khám phá hoàn toàn bí ẩn của Vũ trụ không?",
+                options: [
+                    { text: "Có thể! Khoa học và thực tiễn sẽ từng bước giải mã mọi quy luật.", type: "duyvat" },
+                    { text: "Có thể, thông qua sự thấu thị tâm linh, đức tin hoặc suy tưởng lý tính.", type: "duytam" },
+                    { text: "Không thể. Bản chất chiều sâu của vũ trụ nằm ngoài khả năng nhận thức.", type: "batkhaluan" }
+                ]
+            }
+        ];
+
+        let currentQuizStep = 0;
+        let quizScores = { duyvat: 0, duytam: 0, batkhaluan: 0 };
+
+        function renderQuizQuestion() {
+            const q = quizQuestions[currentQuizStep];
+            document.getElementById('quiz-step-label').innerText = `Câu hỏi ${currentQuizStep + 1} / ${quizQuestions.length}`;
+            document.getElementById('quiz-progress-bar').style.width = `${((currentQuizStep + 1) / quizQuestions.length) * 100}%`;
+            document.getElementById('quiz-question-text').innerText = q.question;
+
+            const listEl = document.getElementById('quiz-options-list');
+            listEl.innerHTML = '';
+
+            q.options.forEach(opt => {
+                const btn = document.createElement('button');
+                btn.className = "w-full text-left p-3.5 rounded-lg bg-white/90 hover:bg-goldLight/30 border border-sepiaLight/60 hover:border-goldDark transition text-xs sm:text-sm text-sepiaDark font-medium flex items-center gap-3 shadow-sm group";
+                btn.innerHTML = `<i class="fa-regular fa-circle text-burgundy group-hover:text-goldDark transition-colors"></i> <span>${opt.text}</span>`;
+                btn.onclick = () => handleQuizOption(opt.type);
+                listEl.appendChild(btn);
+            });
+        }
+
+        function handleQuizOption(type) {
+            quizScores[type]++;
+            currentQuizStep++;
+
+            if (currentQuizStep < quizQuestions.length) {
+                renderQuizQuestion();
+            } else {
+                showQuizResult();
+            }
+        }
+
+        function showQuizResult() {
+            document.getElementById('quiz-question-box').classList.add('hidden');
+            const resultBox = document.getElementById('quiz-result-box');
+            resultBox.classList.remove('hidden');
+
+            const titleEl = document.getElementById('result-title');
+            const descEl = document.getElementById('result-desc');
+            const iconEl = document.getElementById('result-icon');
+
+            if (quizScores.duyvat >= quizScores.duytam && quizScores.duyvat >= quizScores.batkhaluan) {
+                titleEl.innerText = "Chủ Nghĩa Duy Vật Khách Quan";
+                descEl.innerText = "Bạn có thế giới quan thực tiễn và khoa học. Bạn tin rằng vật chất tồn tại khách quan, quyết định ý thức và con người hoàn toàn có khả năng nhận thức, cải tạo thế giới thông qua hoạt động thực tiễn!";
+                iconEl.className = "fa-solid fa-mountain";
+            } else if (quizScores.duytam >= quizScores.batkhaluan) {
+                titleEl.innerText = "Chủ Nghĩa Duy Tâm";
+                descEl.innerText = "Bạn coi trọng vai trò của tinh thần, ý thức, ý chí và lý tưởng. Bạn tin rằng các giá trị tinh thần hoặc nguyên lý tư duy đóng vai trò quyết định và dẫn dắt bản chất của thực tại.";
+                iconEl.className = "fa-solid fa-cloud-moon";
+            } else {
+                titleEl.innerText = "Thuyết Bất Khả Luận / Thuyết Hoài Nghi";
+                descEl.innerText = "Bạn có thái độ cẩn trọng đối với mọi tri thức. Bạn cho rằng trí tuệ con người luôn bị giới hạn bởi thời đại và công cụ, do đó luôn giữ sự hoài nghi khoa học trước các khẳng định tuyệt đối.";
+                iconEl.className = "fa-solid fa-circle-question";
+            }
+        }
+
+        function resetQuiz() {
+            currentQuizStep = 0;
+            quizScores = { duyvat: 0, duytam: 0, batkhaluan: 0 };
+            document.getElementById('quiz-result-box').classList.add('hidden');
+            document.getElementById('quiz-question-box').classList.remove('hidden');
+            renderQuizQuestion();
+        }
+
+        // Initialize Quiz on Load
+        window.addEventListener('DOMContentLoaded', () => {
+            renderQuizQuestion();
+        });
+
+        // Close modal on escape key
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+    </script>
+</body>
+</html>
